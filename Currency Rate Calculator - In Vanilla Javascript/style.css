@@ -34,6 +34,8 @@ p {
   border-radius: 5px;
   padding: 7px;
   font-size: 17px;
+  outline: none;
+  cursor: pointer;
 }
 
 .money-img {
@@ -67,6 +69,7 @@ p {
   text-align: right;
   font-size: 22px;
   font-weight: 600;
+  outline: none;
 }
 
 .swap-rate-container {
@@ -81,8 +84,3 @@ p {
   padding: 0 15px;
 }
 
-select:focus,
-input:focus,
-button:focus {
-  outline: 0;
-}
