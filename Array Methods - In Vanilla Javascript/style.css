@@ -37,6 +37,7 @@ button{
     margin-bottom: 20px ;
     font-weight: 550;
     padding: 10px;
+    outline: none;
 }
 
 
@@ -70,5 +71,5 @@ h3{
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
