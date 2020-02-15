@@ -49,7 +49,22 @@ function formatMoney(number){
 }
 
 
+
+
 //function to addUser
 addUserBtn.addEventListener('click',function(){
     getRandomUser();
+})
+
+function doubleMoney(){
+    data = data.map(item=>{
+        return {...item, money: item.money *  2}
+    })
+   updateDOM()
+}
+
+
+//function to doublebtn
+doubleBtn.addEventListener('click',()=>{
+    doubleMoney();
 })
