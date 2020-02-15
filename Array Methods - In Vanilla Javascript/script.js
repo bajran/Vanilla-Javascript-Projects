@@ -48,14 +48,7 @@ function formatMoney(number){
     return '$'+number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g,'$&,');
 }
 
-
-
-
-//function to addUser
-addUserBtn.addEventListener('click',function(){
-    getRandomUser();
-})
-
+//Double Money
 function doubleMoney(){
     data = data.map(item=>{
         return {...item, money: item.money *  2}
@@ -63,8 +56,26 @@ function doubleMoney(){
    updateDOM()
 }
 
+//Sortby Richest
+function sortByRichest(){
+    data.sort((a,b)=>{
+       return b.money - a.money 
+    })
+    updateDOM();
+}
+
+
+//function to addUser
+addUserBtn.addEventListener('click',function(){
+    getRandomUser();
+})
 
 //function to doublebtn
 doubleBtn.addEventListener('click',()=>{
     doubleMoney();
+})
+
+//function to sort
+sortBtn.addEventListener('click',()=>{
+    sortByRichest()
 })
