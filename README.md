@@ -1,3 +1,3 @@
 # Vanilla-Javascript-Projects
 
-Contains multiple javascript projects -- without using any framework
+This repo contains - Projects in Vanilla Javascript / Plain Js
