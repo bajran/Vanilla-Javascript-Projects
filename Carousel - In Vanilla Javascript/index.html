@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="carousel">
-        <button class="carousel_button"></button>
-        <button class="carousel_button"></button>
+        <button class="carousel_button carousel_button--left"></button>
+            <div class="carousel_track-container">
+                <ul class="carousel_track">
+                    <li class="carouse_slide current-slide">
+                        <img class="carousel_image" src="slide1.jpg" alt="loading.."></img>
+                    </li>
+                    <li class="carouse_slide">
+                        <img class="carousel_image" src="slide2.jpg" alt="loading.."></img>
+                    </li>
+                    <li class="carouse_slide">
+                        <img class="carousel_image" src="slide3.jpg" alt="loading.."></img>
+                    </li>
+                </ul>
+            </div>
+        <button class="carousel_button carousel_button--right"></button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
